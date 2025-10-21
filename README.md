@@ -1,2 +1,8 @@
-# DataCo_Sales_Analysis
-A deep dive into DataCo Sales from 2015 to 2018 Using SQL &amp; Power BI
+# DataCo Sales Analysis
+
+## Table of Contents
+- Overview(#overview)
+- Objectives (#objectives)
+- Tools(#tools)
+- Data Source & Structure(#data-source-&-structure)
+- SQL Data Analysis(#sql-data-analysis)
