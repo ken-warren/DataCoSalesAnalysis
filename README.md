@@ -23,7 +23,7 @@
 ## Project Overview
 This project presents a comprehensive DataCo Sales Analysis using SQL and Power BI. The goal is to transform raw sales data (sourced from [Kaggle](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) into a clean, analytical data model through the design of fact and dimension tables, followed by the creation of insightful Power BI dashboards to derive insights.
 
-The main objective of this analysis is to provide a 360° view of DataCo’s sales performance, exploring key drivers of business growth and decline across five strategic dimensions — sales and profitability trends, customer behavior, product performance, operational efficiency, and regional market dynamics.
+The main objective of this analysis is to provide a 360° view of DataCo’s sales performance, exploring key drivers of business growth and decline across five strategic dimensions - sales and profitability trends, customer behavior, product performance, operational efficiency, and regional market dynamics.
 
 ## Business Questions
 ### 1. Sales & Profitability Trends
