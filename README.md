@@ -66,11 +66,11 @@ The dataset used in this project was obtained from [Kaggle’s DataCo Supply Cha
 ### Data Structure:
 The raw dataset was cleaned and transformed into a Star Schema model to optimize reporting and analysis in Power BI. The structure includes:
 - Fact Table:
--- Fact_Sales – Contains transaction-level data such as Order ID, Product ID, Customer ID, Quantity, Sales, Profit, Discount, Shipping Cost, and Order Date.
+  - Fact_Sales – Contains transaction-level data such as Order ID, Product ID, Customer ID, Quantity, Sales, Profit, Discount, Shipping Cost, and Order Date.
 
 - Dimension Tables:
--- Dim_Customer – Customer demographics, segment, and market information.
--- Dim_Product – Product name, category, sub-category, and related details.
--- Dim_Shipping – Shipping mode, shipping cost, delivery status, and shipping duration.
--- Dim_Geography – City, state, country, and regional hierarchy (APAC, EU, US, etc.).
+  - Dim_Customer – Customer demographics, segment, and market information.
+  - Dim_Product – Product name, category, sub-category, and related details.
+  - Dim_Shipping – Shipping mode, shipping cost, delivery status, and shipping duration.
+  - Dim_Geography – City, state, country, and regional hierarchy (APAC, EU, US, etc.).
 
