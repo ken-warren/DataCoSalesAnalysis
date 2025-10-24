@@ -73,4 +73,6 @@ The raw dataset was cleaned and transformed into a Star Schema model to optimize
   - Dim_Product – Product name, category, sub-category, and related details.
   - Dim_Shipping – Shipping mode, shipping cost, delivery status, and shipping duration.
   - Dim_Geography – City, state, country, and regional hierarchy (APAC, EU, US, etc.).
+  - Dim Departments- Business departments
+  - Date table
 
