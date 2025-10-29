@@ -354,7 +354,60 @@ DIVIDE(
 )
 
 ```
+Calculated columns and measures for cohort analysis.
+- First Order Date(End of Month)
+```
+First Order Month End = 
+VAR _FirstOrderDate =
+    CALCULATE(
+        MIN(Sales[Order Date]),
+        FILTER(Sales, Sales[Customer ID] = VALUE(EARLIER(Customers[Customer ID])))
+    )
+RETURN
+    FORMAT(EOMONTH(_FirstOrderDate, 0),"MMM YYYY")
 
+```
+- Last Order Date(End of Month)
+```
+Last Order Month End = 
+VAR _FirstOrderDate =
+    CALCULATE(
+        MAX(Sales[Order Date]),
+        FILTER(Sales, Sales[Customer ID] = VALUE(EARLIER(Customers[Customer ID])))
+    )
+RETURN
+    FORMAT(EOMONTH(_FirstOrderDate, 0),"MMM YYYY")
+
+```
+- Retention Period
+```
+Retention Period = 
+ABS(
+  DATEDIFF(Customers[First Order Month End],Customers[Last Order Month End],DAY)
+  )
+```
+- Days Since Last Purchase
+```
+Days Since Last Purchase = 
+DATEDIFF(
+    [Last Order Month End],
+   EOMONTH( MAX('Date'[Date]),1),
+    DAY
+)
+
+```
+- Churn Classification
+```
+Churned? = 
+VAR _churnThreshold = 180
+RETURN
+SWITCH(
+    TRUE(),
+    [Days Since Last Purchase] <= _churnThreshold, "Active",
+    "Churned"
+)
+
+```
 - Customer retention percentage measure
 ```
 Customer Retention % = 
@@ -384,3 +437,18 @@ VAR TotalCohortCustomers =
 RETURN
 DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 ```
+[Sales Page]()
+
+[Customers page]()
+
+[Products Page]()
+
+[Shipping page]()
+
+[Region/orders page]()
+
+### Findings
+### Conclusion
+### Recommendations
+### Reference
+
