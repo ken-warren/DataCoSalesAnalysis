@@ -489,8 +489,10 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 - Profit varies for different product categories with the highest profit recorded on fishing products($756,220) after a discount of 10.17%.
   Strength training products record the lowest profit at $332 after a discount of 10.5%.
 
-- 
-
+- Fishing — $756K profit, Cleats — $495K profit and Camping & Hiking — $427K profit.
+  These categories drive both high revenue and strong profit, with Fishing leading overall.
+  
+- Music ($33.26 profit/order), Sporting Goods ($35.07) and Children’s Clothing ($41.68) categories yield low profit per order, suggesting slower movement or lower volume.
 
 #### Shipping
 
@@ -511,6 +513,10 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 
 - DataCo’s sales are at $33.05M (2015-2018)
   Europe accounts for 30%, LATAM 28%, Pacific Asia 22%, USCA 12% and Africa 6%.
+
+- Pacific Asia shows the highest YoY Sales Growth of 4.2% which can be attributed to the customer growth of 19.1%.
+
+- Profit vs. sales: Similar margins are observed across regions, but absolute profits follow total sales - led by Europe and LATAM, with Africa trailing.
 
 ### Conclusion
 ### Recommendations
