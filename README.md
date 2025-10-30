@@ -437,15 +437,20 @@ VAR TotalCohortCustomers =
 RETURN
 DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 ```
-[Sales Page]()
+[Sales Page](<img width="1496" height="842" alt="Sales" src="https://github.com/user-attachments/assets/6377650d-61e2-410d-9359-730651920e1a" />)
 
-[Customers page]()
 
-[Products Page]()
+[Customers page](<img width="1492" height="839" alt="Customers" src="https://github.com/user-attachments/assets/59222acc-a8b5-4c77-8d7f-fc46a588384b" />)
 
-[Shipping page]()
 
-[Region/orders page]()
+[Products Page](<img width="1493" height="837" alt="Products" src="https://github.com/user-attachments/assets/a710b6b1-a79b-45b9-9c73-e8ba0c92e754" />)
+
+
+[Shipping page](<img width="1493" height="837" alt="Shipping" src="https://github.com/user-attachments/assets/bb215cc9-1e37-476a-a487-f0770a1e9bd6" />)
+
+
+[Region/orders page](<img width="1492" height="837" alt="Regions" src="https://github.com/user-attachments/assets/f96767a3-37ec-464b-a605-001d799f148c" />)
+
 
 ### Findings
 ### Conclusion
