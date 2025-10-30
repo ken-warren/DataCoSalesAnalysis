@@ -443,9 +443,9 @@ RETURN
 DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 ```
 
-### Findings
+## Findings
 
-#### Sales
+#### 1. Sales
 
   <img width="1496" height="842" alt="Sales" src="https://github.com/user-attachments/assets/6377650d-61e2-410d-9359-730651920e1a" />
 
@@ -453,7 +453,7 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 
   <img width="683" height="550" alt="Screenshot 2025-10-30 142912" src="https://github.com/user-attachments/assets/53c0501d-ece3-4991-a5ac-4697124b6d42" />
 
-- Generally, sales peak in January and October and the lowest sales are recorded in February and November. An overall consistent trend observed through the rest of the months. 
+- Generally, sales are seasonal with peaks in January and October, and the lowest sales are recorded in February and November. An overall consistent trend observed through the rest of the months. 
   This trend is,however, not consistent with different peaks and troughs observed every year.
 
   <img width="650" height="268" alt="Screenshot 2025-10-30 143900" src="https://github.com/user-attachments/assets/27c17315-2514-4584-a706-3a053fd6edaf" />
@@ -463,7 +463,7 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 
 - The average discount rate across all categories is ~10% with a slight increase in sales volume over the years corresponding to the slight increase in discount. The increasing sales volumes are, however, not directly linked to increasing discounts.
 
-#### Customers
+#### 2. Customers
 
   <img width="1492" height="839" alt="Customers" src="https://github.com/user-attachments/assets/59222acc-a8b5-4c77-8d7f-fc46a588384b" />
 
@@ -518,7 +518,48 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 
 - Profit vs. sales: Similar margins are observed across regions, but absolute profits follow total sales - led by Europe and LATAM, with Africa trailing.
 
-### Conclusion
-### Recommendations
-### Reference
+## Conclusion
+
+From 2015 to 2018, DataCo recorded **$33.05M** in total sales, with Europe (**30%**) and LATAM (**28%**) leading contributions, and Pacific Asia showing the highest growth (**4.2%**) due to customer expansion. Despite an average **10%** discount rate, higher discounts did not significantly boost sales, suggesting growth was driven by customer reach rather than pricing. Sales peaked in **January** and **October**, reflecting seasonal demand patterns, and debit payments dominated (**38%**), indicating strong digital payment adoption.
+
+The consumer segment accounted for **51%** of total sales, but over **70%** of new customers failed to return, signaling high churn. Profits were highest in **Fishing**, **Cleats**, and **Camping & Hiking** categories, while categories like **Music** and **Strength Training** underperformed. Shipping delays affected over half of all orders, particularly in Europe and LATAM, averaging a **19%** delay. Overall, DataCo shows solid regional diversification and high-growth potential, but challenges in **customer retention**, **logistics reliability**, and **product profitability** remain key areas for improvement.
+
+## Recommendations  
+
+### 1. Customer Retention & Churn Reduction  
+- Implement retention campaigns: loyalty programs, personalized emails, and post-purchase engagement.  
+- Analyze customer cohorts to identify high-potential repeat buyers. 
+- Develop a **churn prediction model** using variables such as order delay, product category, and discount rate to determine have a higher risk of churning.
+- Reallocate part of the acquisition budget toward retention - retaining customers is 5-25 times cheaper than acquiring new ones.
+
+
+### 2. Logistics & Delivery Optimization  
+- Investigate root causes of delays by carrier, route, and region.  
+- Introduce **real-time tracking** and proactive communication to mitigate negative perceptions.  
+- Consider **regional fulfillment hubs**, e.g, strategically located warehouses, in areas affected with high delivery risks like Europe and LATAM to shorten delivery time.
+
+### 3. Product Portfolio Focus  
+- Invest marketing and stock in high-margin categories (Fishing, Cleats, Camping & Hiking).  
+- Reassess under-performing categories (Music, Strength Training, Children’s Clothing) for redesign, repositioning, or discontinuation.  
+- Replace price-off discounts with **targeted or conditional discounts** (e.g., bundling, loyalty-based).
+
+
+### 4. Market Strategy  
+- Double down on **Pacific Asia** for expansion given its strong customer growth.  
+- Maintain focus on **Europe and LATAM**, but improve delivery reliability.  
+- For **Africa**, pilot local partnerships and logistics improvements before scaling.  
+- Leverage **seasonal peaks** (January, October) for promotions and manage inventory to mitigate low seasons.
+
+
+### 5. Payment Optimization  
+- Continue promoting debit and card payments; explore **digital wallets** and **Buy-Now-Pay-Later** solutions.  
+- Maintain minimal dependency on cash payments except where regionally necessary.  
+
+
+### 6. Customer Lifetime Value (CLV) Tracking  
+- Implement CLV models to quantify long-term customer profitability.  
+- Develop retention dashboards in Power BI to track repeat purchase behavior and customer profitability by region and category.  
+- Prioritize customers with the highest potential LTV for personalized offers and loyalty incentives.
+
+## Reference
 
