@@ -16,6 +16,11 @@
   - [Modeling](#modeling)
   - [Measures (DAX)](#measures-dax)
 - [Findings](#findings)
+  - [Sales](#sales)
+  - [Customers](#customers)
+  - [Products](#products)
+  - [Shipping](#shipping)
+  - [Regions](#regions)
 - [Conclusion](#conclusion)
 - [Recommendations](#recommendations)
 - [Reference](#reference)
@@ -240,20 +245,20 @@ CREATE TABLE fact_order_items (
 ### Data Structure:
 The raw dataset was cleaned and transformed into a Star Schema model to optimize reporting and analysis in Power BI. The final structure includes:
 - Fact Table:
-  - Fact_Sales – Contains transaction-level data such as Order ID, Product ID, Customer ID, Quantity, Sales, Profit, Discount, Shipping Cost, and Order Date.
+  - Sales – Contains transaction-level data such as Order ID, Product ID, Customer ID, Quantity, Sales, Profit, Discount, Shipping Cost, and Order Date.
 
 - Dimension Tables:
-  - Dim_Customer – Customer demographics, segment, and market information.
-  - Dim_Product – Product name, category, sub-category, and related details.
-  - Dim_Geography – City, state, country, and regional hierarchy (APAC, EU, US, etc.).
-  - Dim Departments- Business departments
-  - Dim_Categories
+  - Customer – Customer demographics, segment, and market information.
+  - Product – Product name, category, sub-category, and related details.
+  - Order/Store Location – City, state, country, and regional hierarchy (APAC, EU, US, etc.).
+  - Departments - Business departments
+  - Categories - Product categories
   - Date table
   
  ### Database Schema
  
- [image of our data model]
-
+   <img width="1047" height="802" alt="Data Model" src="https://github.com/user-attachments/assets/04e59623-6804-4180-8bbf-edbb6dfd6abc" />
+ 
  ### Power BI Analysis
  
  #### Modeling
@@ -437,22 +442,76 @@ VAR TotalCohortCustomers =
 RETURN
 DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 ```
-[Sales Page](<img width="1496" height="842" alt="Sales" src="https://github.com/user-attachments/assets/6377650d-61e2-410d-9359-730651920e1a" />)
-
-
-[Customers page](<img width="1492" height="839" alt="Customers" src="https://github.com/user-attachments/assets/59222acc-a8b5-4c77-8d7f-fc46a588384b" />)
-
-
-[Products Page](<img width="1493" height="837" alt="Products" src="https://github.com/user-attachments/assets/a710b6b1-a79b-45b9-9c73-e8ba0c92e754" />)
-
-
-[Shipping page](<img width="1493" height="837" alt="Shipping" src="https://github.com/user-attachments/assets/bb215cc9-1e37-476a-a487-f0770a1e9bd6" />)
-
-
-[Region/orders page](<img width="1492" height="837" alt="Regions" src="https://github.com/user-attachments/assets/f96767a3-37ec-464b-a605-001d799f148c" />)
-
 
 ### Findings
+
+#### Sales
+
+  <img width="1496" height="842" alt="Sales" src="https://github.com/user-attachments/assets/6377650d-61e2-410d-9359-730651920e1a" />
+
+- Our total sales are $33.05M post-discount with the European Market contributing to 30% of the overall sales from 2015 - 2018. The chart below shows sales by market:
+
+  <img width="683" height="550" alt="Screenshot 2025-10-30 142912" src="https://github.com/user-attachments/assets/53c0501d-ece3-4991-a5ac-4697124b6d42" />
+
+- Generally, sales peak in January and October and the lowest sales are recorded in February and November. An overall consistent trend observed through the rest of the months. 
+  This trend is,however, not consistent with different peaks and troughs observed every year.
+
+  <img width="650" height="268" alt="Screenshot 2025-10-30 143900" src="https://github.com/user-attachments/assets/27c17315-2514-4584-a706-3a053fd6edaf" />
+
+- Debit payment mode is the most popular and accounts for 38% of sales ~ $12M
+  Cash is the least popular payment mode at 11% - $3.62M.
+
+- The average discount rate across all categories is ~10% with a slight increase in sales volume over the years corresponding to the slight increase in discount. The increasing sales volumes are, however, not directly linked to increasing discounts.
+
+#### Customers
+
+  <img width="1492" height="839" alt="Customers" src="https://github.com/user-attachments/assets/59222acc-a8b5-4c77-8d7f-fc46a588384b" />
+
+- Our top 5 customers revenuewise  overall are Smith Mary, Smith Robert, Smith James, Smith David and   Smith John.
+
+   <img width="446" height="297" alt="Screenshot 2025-10-30 144848" src="https://github.com/user-attachments/assets/310ef27b-a8a0-4f3c-8366-183de0d07521" />
+
+-  The USA, France and Mexico account for 69% of DataCo’s customers(~14k)and about 28% of sales from 2015 to 2018.
+
+    <img width="686" height="400" alt="Screenshot 2025-10-30 150528" src="https://github.com/user-attachments/assets/81436bc9-7598-4b50-9148-8d1915e2b5f5" />
+
+- The consumer segment contributes $17M in sales(51% of sales ),Corporate $10M and Home office $6M.
+
+- Over 70% of new customers don't return following their initial order. Acquisition is followed by a high churn rate.
+  The cohort analysis table below shows a glimpse of customer behaviour over 12 months following the first order:
+  
+  <img width="637" height="453" alt="Screenshot 2025-10-24 115205" src="https://github.com/user-attachments/assets/6b12e317-f520-477e-9f5f-b860211acb60" />
+
+#### Products
+
+  <img width="1493" height="837" alt="Products" src="https://github.com/user-attachments/assets/a710b6b1-a79b-45b9-9c73-e8ba0c92e754" />
+
+- Profit varies for different product categories with the highest profit recorded on fishing products($756,220) after a discount of 10.17%.
+  Strength training products record the lowest profit at $332 after a discount of 10.5%.
+
+- 
+
+
+#### Shipping
+
+  <img width="1493" height="837" alt="Shipping" src="https://github.com/user-attachments/assets/60c56063-fbf6-4d4f-a261-6d76103fe2c8" />
+
+- Shipping delay is experienced across all shipping modes and markets and no direct effect on sales/profit is observed.
+  It could however be attributed to the loss of customers over time.
+
+- 55% of orders are delivered late across all markets
+  The average scheduled delivery time is 70hrs, while the average actual delivery time is 84hrs, presenting an average delay of 19%.
+
+- LATAM and Europe have the highest delay risk at 28% but they also have more orders compared to regions like Africa which has a 6% risk and the lowest number of orders.
+  Standard class has the timely delivery while first class and second class have a 24-48 hour delay respectively.
+
+#### Regions
+
+  <img width="1492" height="837" alt="Regions" src="https://github.com/user-attachments/assets/0f1de658-3752-4ad6-963d-8f8062d2f1a6" />
+
+- DataCo’s sales are at $33.05M (2015-2018)
+  Europe accounts for 30%, LATAM 28%, Pacific Asia 22%, USCA 12% and Africa 6%.
+
 ### Conclusion
 ### Recommendations
 ### Reference
