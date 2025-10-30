@@ -467,7 +467,7 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 
   <img width="1492" height="839" alt="Customers" src="https://github.com/user-attachments/assets/59222acc-a8b5-4c77-8d7f-fc46a588384b" />
 
-- Our top 5 customers revenuewise  overall are Smith Mary, Smith Robert, Smith James, Smith David and   Smith John.
+- Our top 5 customers revenue-wise are Smith Mary, Smith Robert, Smith James, Smith David and Smith John. Only a small percentage of customers contribute to the overall sales.
 
    <img width="446" height="297" alt="Screenshot 2025-10-30 144848" src="https://github.com/user-attachments/assets/310ef27b-a8a0-4f3c-8366-183de0d07521" />
 
@@ -482,7 +482,7 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
   
   <img width="637" height="453" alt="Screenshot 2025-10-24 115205" src="https://github.com/user-attachments/assets/6b12e317-f520-477e-9f5f-b860211acb60" />
 
-#### Products
+#### 3. Products
 
   <img width="1493" height="837" alt="Products" src="https://github.com/user-attachments/assets/a710b6b1-a79b-45b9-9c73-e8ba0c92e754" />
 
@@ -494,7 +494,7 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
   
 - Music ($33.26 profit/order), Sporting Goods ($35.07) and Children’s Clothing ($41.68) categories yield low profit per order, suggesting slower movement or lower volume.
 
-#### Shipping
+#### 4. Shipping
 
   <img width="1493" height="837" alt="Shipping" src="https://github.com/user-attachments/assets/60c56063-fbf6-4d4f-a261-6d76103fe2c8" />
 
@@ -507,7 +507,7 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 - LATAM and Europe have the highest delay risk at 28% but they also have more orders compared to regions like Africa which has a 6% risk and the lowest number of orders.
   Standard class has the timely delivery while first class and second class have a 24-48 hour delay respectively.
 
-#### Regions
+#### 5. Regions
 
   <img width="1492" height="837" alt="Regions" src="https://github.com/user-attachments/assets/0f1de658-3752-4ad6-963d-8f8062d2f1a6" />
 
