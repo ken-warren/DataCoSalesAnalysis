@@ -473,7 +473,7 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 
 - The consumer segment contributes $17M in sales(51% of sales ),Corporate $10M and Home office $6M.
 
-- Over 70% of new customers don't return following their initial order. Acquisition is followed by a high churn rate.
+- Over 80% of new customers don't return following their initial order. Acquisition is followed by a high churn rate.
   The cohort analysis table below shows a glimpse of customer behaviour over 12 months following the first order:
   
   <img width="637" height="453" alt="Screenshot 2025-10-24 115205" src="https://github.com/user-attachments/assets/6b12e317-f520-477e-9f5f-b860211acb60" />
