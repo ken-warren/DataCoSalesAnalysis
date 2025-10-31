@@ -19,7 +19,6 @@
   - [Regions](#regions)
 - [Conclusion](#conclusion)
 - [Recommendations](#recommendations)
-- [Reference](#reference)
 
 ## Project Overview
 This project presents a comprehensive DataCo Sales Analysis using SQL and Power BI. The goal is to transform raw sales data (sourced from [Kaggle](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) into a clean, analytical data model through the design of fact and dimension tables, followed by the creation of insightful Power BI dashboards to derive insights.
@@ -556,6 +555,3 @@ The consumer segment accounted for **51%** of total sales, but over **70%** of n
 - Implement CLV models to quantify long-term customer profitability.  
 - Develop retention dashboards in Power BI to track repeat purchase behavior and customer profitability by region and category.  
 - Prioritize customers with the highest potential LTV for personalized offers and loyalty incentives.
-
-## Reference
-
