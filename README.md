@@ -517,21 +517,21 @@ DIVIDE(RetainedCustomers, TotalCohortCustomers, 0)
 
 From 2015 to 2018, DataCo recorded **$33.05M** in total sales, with Europe (**30%**) and LATAM (**28%**) leading contributions, and Pacific Asia showing the highest growth (**4.2%**) due to customer expansion. Despite an average **10%** discount rate, higher discounts did not significantly boost sales, suggesting growth was driven by customer reach rather than pricing. Sales peaked in **January** and **October**, reflecting seasonal demand patterns, and debit payments dominated (**38%**), indicating strong digital payment adoption.
 
-The consumer segment accounted for **51%** of total sales, but over **80%** of new customers failed to return, signaling high churn. Profits were highest in **Fishing**, **Cleats**, and **Camping & Hiking** categories, while categories like **Music** and **Strength Training** underperformed. Shipping delays affected 55% of all orders, particularly in Europe and LATAM, averaging a **19%** delay. Overall, DataCo shows solid regional diversification and high-growth potential, but challenges in **customer retention**, **logistics reliability**, and **product profitability** remain key areas for improvement.
+The consumer segment accounted for **51%** of total sales, but over **80%** of new customers failed to return, signaling high churn. Profits were highest in the **Fishing**, **Cleats**, and **Camping & Hiking** categories, while **Music** and **Strength Training** underperformed. Shipping delays affected 55% of all orders, particularly in Europe and LATAM, averaging a **19%** delay. Overall, DataCo shows solid regional diversification and high-growth potential, but challenges in **customer retention**, **logistics reliability**, and **product profitability** remain key areas for improvement.
 
 ## Recommendations  
 
 ### 1. Customer Retention & Churn Reduction  
-- Implement retention campaigns: loyalty programs, personalized emails, and post-purchase engagement.  
+- Implement retention campaigns, including loyalty programs, personalized emails, and post-purchase engagement.  
 - Analyze customer cohorts to identify high-potential repeat buyers. 
-- Develop a **churn prediction model** using variables such as order delay, product category, and discount rate to determine have a higher risk of churning.
+- Develop a **churn prediction model** using variables such as order delay, product category, and discount rate to identify customers that have a higher risk of churning.
 - Reallocate part of the acquisition budget toward retention - retaining customers is 5-25 times cheaper than acquiring new ones.
 
 
 ### 2. Logistics & Delivery Optimization  
 - Investigate root causes of delays by carrier, route, and region.  
-- Introduce **real-time tracking** and proactive communication to mitigate negative perceptions.  
-- Consider **regional fulfillment hubs**, e.g, strategically located warehouses, in areas affected with high delivery risks like Europe and LATAM to shorten delivery time.
+- Introduce **real-time tracking** and proactive communication to mitigate negative perception.  
+- Consider establishing **regional fulfillment hubs** by strategically locating warehouses in high delivery-risk regions, such as Europe and LATAM, to reduce delivery lead times.
 
 ### 3. Product Portfolio Focus  
 - Invest marketing and stock in high-margin categories (Fishing, Cleats, Camping & Hiking).  
